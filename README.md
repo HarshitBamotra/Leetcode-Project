@@ -55,30 +55,30 @@ The services are designed to communicate through message queues to handle submis
 ## Installation and Setup
 
 ### 1. Clone the repository:
-   ```bash
-    git clone https://github.com/HarshitBamotra/Leetcode-Project.git
-   ```
+```bash
+git clone https://github.com/HarshitBamotra/Leetcode-Project.git
+```
 ### 2. Change directory
-    ```bash
-    cd Leetcode-Project
-    ```
+```bash
+cd Leetcode-Project
+```
 ### 3. Install Dependencies
-    ```bash
-    cd leetcode-submission-service
-    npm i
+```bash
+cd leetcode-submission-service
+npm i
 
-    cd ../leetcode-evaluator-service
-    npm i
+cd ../leetcode-evaluator-service
+npm i
 
-    cd ../leetcode-problem-service
-    npm i
+cd ../leetcode-problem-service
+npm i
 
-    cd ../leetcode-socket-service
-    npm i
+cd ../leetcode-socket-service
+npm i
 
-    cd ../leetcode-frontend
-    npm i
-    ```
+cd ../leetcode-frontend
+npm i
+```
 
 ### 4. Set up environment variables
 
@@ -119,22 +119,22 @@ LOG_DB_URL = MongoDB URL
 
 ### 7. Start the Application
 
-    ```bash
-    cd leetcode-submission-service
-    npm start
+```bash
+cd leetcode-submission-service
+npm start
 
-    cd ../leetcode-evaluator-service
-    npm start
+cd ../leetcode-evaluator-service
+npm start
 
-    cd ../leetcode-problem-service
-    npm start
+cd ../leetcode-problem-service
+npm start
 
-    cd ../leetcode-socket-service
-    npm start
+cd ../leetcode-socket-service
+npm start
 
-    cd ../leetcode-frontend
-    npm run dev
-    ```
+cd ../leetcode-frontend
+npm run dev
+```
 
 ### 8. Access the Application at `localhost:5173/`
 
