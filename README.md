@@ -14,6 +14,8 @@ The services are designed to communicate through message queues to handle submis
 
 ## Architecture and Workflow
 
+![Leetcode Architecture](./leetcode-architecture.png)
+
 When a client submits a solution, the workflow proceeds as follows:
 
 1. **Frontend Submission**: The client submits code via the frontend.
