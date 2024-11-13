@@ -137,3 +137,17 @@ LOG_DB_URL = MongoDB URL
     ```
 
 ### 8. Access the Application at `localhost:5173/`
+
+## PROJECT SCREENSHOTS
+
+### Problem List Page
+
+![Problem List](./problem-list.png)
+
+### Problem Description Page
+
+![Leetcode Architecture](./problem-page.png)
+
+### Problem Submission
+
+![Leetcode Architecture](./code-submission.png)
