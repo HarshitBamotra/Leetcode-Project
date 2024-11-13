@@ -16,27 +16,6 @@ The services are designed to communicate through message queues to handle submis
 
 ![Leetcode Architecture](./leetcode-architecture.png)
 
-When a client submits a solution, the workflow proceeds as follows:
-
-1. **Frontend Submission**: The client submits code via the frontend.
-2. **Submission Service**: 
-   - Receives the submission request.
-   - Fetches problem details from the Problem Service.
-   - Creates a new submission entry in the database.
-   - Adds the submission to the `submissionQueue` for processing.
-3. **Evaluation Service**:
-   - Listens for new submissions in the `submissionQueue`.
-   - Creates a Docker container to evaluate the submitted code securely.
-   - Runs test cases and generates evaluation results.
-   - Sends the results to the `evaluationQueue`.
-4. **Submission Service** (continued):
-   - Picks up results from the `evaluationQueue`.
-   - Forwards the results to the Socket Service.
-5. **Socket Service**:
-   - Receives results and sends them to the client in real-time using WebSockets.
-6. **Frontend Update**:
-   - Displays the evaluation results to the client.
-
 ## Microservices Overview
 
 ### 1. Problem Service
